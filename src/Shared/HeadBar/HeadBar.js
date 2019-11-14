@@ -6,9 +6,21 @@ export default class HeadBar extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header className="header">
-          <div>
-            <img src="" alt="" /> 사진 A Dreamy developer
+        <Header
+          style={{
+            backgroundColor: "#b3e6ff",
+            height: 75,
+            textAlign: "center"
+          }}
+        >
+          <div
+            style={{
+              fontWeight: "bold",
+              fontSize: 30,
+              textAlign: "center"
+            }}
+          >
+            A Dreamy developer
           </div>
         </Header>
       </React.Fragment>

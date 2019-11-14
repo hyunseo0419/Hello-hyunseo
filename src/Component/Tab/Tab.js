@@ -1,42 +1,43 @@
 import React from "react";
 import { Tabs, Icon } from "antd";
+import Main from "../Main/Main";
 const { TabPane } = Tabs;
 
 export default function Tab() {
   return (
-    <Tabs defaultActiveKey="2">
+    <Tabs defaultActiveKey="2" size={"large"} style={{ textAlign: "center" }}>
       <TabPane
         tab={
           <span>
-            <Icon type="apple" />
-            Tab 1
+            <Icon type="book" />
+            Posting
           </span>
         }
         key="1"
       >
-        Tab 1
+        posting
       </TabPane>
       <TabPane
         tab={
           <span>
-            <Icon type="android" />
-            Tab 2
+            <Icon type="user" />
+            I'm 이현서
           </span>
         }
         key="2"
       >
-        Tab 2
+        <Main />
       </TabPane>
       <TabPane
         tab={
           <span>
-            <Icon type="android" />
-            Tab 3
+            <Icon type="project" />
+            Project
           </span>
         }
         key="3"
       >
-        Tab 3
+        project
       </TabPane>
     </Tabs>
   );

@@ -1,5 +1,7 @@
 import React from "react";
 import HeadBar from "./Shared/HeadBar/HeadBar";
+import FootBar from "./Shared/FootBar/FootBar";
+
 import Tab from "./Component/Tab/Tab";
 import "./App.css";
 
@@ -8,6 +10,7 @@ function App() {
     <React.Fragment>
       <HeadBar />
       <Tab />
+      <FootBar />
     </React.Fragment>
   );
 }
